@@ -2,7 +2,6 @@ language: ruby
 rvm:
   - 2.6.3
 env:
-  - DB=postgresql
+  - DB=mysql2
 gemfile:
   - Gemfile
-  - gemfiles/rails6.gemfile
