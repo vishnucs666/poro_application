@@ -7,3 +7,5 @@ before_install:
   - gem install bundler
 gemfile:
   - Gemfile
+script:
+  - bundle exec rake db:create db:migrate --trace
