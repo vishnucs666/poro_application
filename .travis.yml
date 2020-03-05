@@ -14,5 +14,5 @@ script:
   - bundle exec rake db:test:prepare
   - bundle exec rspec spec/
 before_script:
-  - mysql -e 'CREATE DATABASE IF NOT EXISTS poro_development;'
+  - mysql -e 'CREATE DATABASE IF NOT EXISTS poro_test;'
 bundler_args: --binstubs=./bundler_stubs
