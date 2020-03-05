@@ -7,9 +7,6 @@ env:
   - DB=mysql2
 before_install:
   - gem install bundler
-  - sudo mysql -e "use mysql; update user set authentication_string=PASSWORD('mypassword') where User='root'; update user set plugin='mysql_native_password';FLUSH PRIVILEGES;"
-  - sudo mysql_upgrade -u root -pmypassword
-  - sudo service mysql restart
 gemfile:
   - Gemfile
 script:
