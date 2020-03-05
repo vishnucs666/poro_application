@@ -11,5 +11,5 @@ script:
   - bundle exec rake db:create db:migrate --trace
   - bundle exec rspec spec/
 before_script:
-  - mysql -e 'create database poro_development'
+  - mysql -e 'CREATE DATABASE IF NOT EXISTS poro_development;'
 bundler_args: --binstubs=./bundler_stubs
