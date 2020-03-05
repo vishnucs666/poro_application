@@ -1,11 +1,8 @@
 language: ruby
 rvm:
   - 2.6.3
-  - jruby
-jobs:
-  include:
-    - stage: deploy
-    rvm: 2.6.3 
-    env: 
-      - FOO=foo
-    script: ./deploy
+env:
+  - DB=postgresql
+gemfile:
+  - Gemfile
+  - gemfiles/rails6.gemfile
