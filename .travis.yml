@@ -10,7 +10,7 @@ before_install:
 gemfile:
   - Gemfile
 script:
-  - bundle exec rake db:migrate --trace
+  - RAILS_ENV=test bundle exec rake db:mgirate --trace
   - bundle exec rspec spec/
 before_script:
   - mysql -e 'CREATE DATABASE IF NOT EXISTS poro_development;'
