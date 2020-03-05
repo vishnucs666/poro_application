@@ -10,7 +10,7 @@ before_install:
 gemfile:
   - Gemfile
 script:
-  - rake db:schema:load
+  - bundle exec rake db:migrate --trace
   - bundle exec rspec spec/
 before_script:
   - mysql -e 'CREATE DATABASE IF NOT EXISTS poro_development;'
