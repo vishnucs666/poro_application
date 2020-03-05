@@ -14,3 +14,9 @@ development:
 test:
   <<: *default
   database: 'poro_test'
+
+test:
+  adapter: mysql2
+  database: 'poro_test'
+  username: travis
+  encoding: utf8

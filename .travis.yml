@@ -1,4 +1,5 @@
 language: ruby
+dist: precise
 rvm:
   - 2.6.3
 services:
